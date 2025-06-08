@@ -64,11 +64,120 @@ climate_change_df.head()
 
 ```
 
+###  Data Analysis
 
+- **Time-Series Decomposition**: This was used to separate trend, seasonality, and residuals.
 
+- **Visualization:** Created line plots,  seasonal subseries plots, and anomaly detection visuals using Python library (Matplotlib)
 
+``` python
+# Converting the datasaet into a Time-Series Decomposition:
 
+climate_change_df = pd.read_csv("C:/Users/steph/OneDrive/Desktop/_DATA SCIENCE BOOTCAMP TRAINING/DATA SET/climate_change.csv",
+                               parse_dates = ["date"], index_col = "date")
 
+climate_change_df.head()
 
+```
 
+###  Data Inspection(check for missing values)
+
+``` python
+
+# Check for any missing value on each column
+# isna().any() is a better code than just isna()
+
+climate_change_df.isna().any()
+
+```
+
+``` python
+
+# Counting the number of missing values.
+
+climate_change_df.isna().sum()
+
+```
+
+### Data Cleaning (handling missing values) 
+
+``` python
+climate_change_df.shape
+```
+
+``` python
+climate_change_df["co2"].mean()
+```
+``` python
+# Filling the missing values with the mean value 352.32 on the co2 column.
+
+climate_change_df = climate_change_df.fillna(352.32)
+
+climate_change_df.head()
+
+```
+``` python
+# To confirm that there are no more missing values , use the function below.
+
+climate_change_df.isna().any()
+```
+
+### Data Visualization
+
+```python
+# Data visualisation using the object orirnted interface of matplotlib 
+
+import matplotlib.pyplot as plt
+
+fig, ax = plt.subplots()
+
+# visualizing the co2 emission vs time(date)
+
+ax.plot(climate_change_df.index, climate_change_df["co2"], color = "red")
+
+# add axis label : 
+# label the x-axis : "Time"
+# label the y-axis : "C02 (ppm)"
+
+ax.set_xlabel("Time")
+
+ax.set_ylabel("C02 (ppm)")
+
+# add general title : Tracking Atmospheric CO2 Emission Historical Trends (1958–2016)
+
+fig.suptitle("Tracking Atmospheric CO2 Emission Historical Trends (1958–2016)")
+
+plt.show()
+
+```
+
+###  Data Interpretation
+
+* The data visualization above shows that there is an overall steady increase of CO2 emission from 1958 to 2016
+
+### Key Findings
+
+**Steady Increase**: CO₂ levels rose from approximately 315 ppm in 1958 to over 403 ppm by 2016.
+
+**Seasonal Patterns**: A regular saw-tooth pattern was observed, corresponding to seasonal plant activity (photosynthesis cycles).
+
+**Acceleration in Emissions**: Linear curve indicates steady growth and increasing acceleration in emissions, especially post-2000.
+
+### Conclusion
+
+- The findings of this study provide compelling evidence of the dramatic rise in atmospheric CO₂ over the last half-century.
+
+- While natural seasonal variations exist, the long-term upward trend is unmistakably driven by industrialization, fossil fuel combustion, and land-use changes. 
+
+- These results underscore the urgency for global climate mitigation strategies and support the scientific consensus on anthropogenic climate change.
+
+### Recommendations
+
+I strongly reconmmend  the global adoption of renewable energy sources.
+
+I strongly reconmmend the Promotion of  global CO₂ emission monitoring for real-time policy response.
+
+I strongly reconmmend that this  findings should be used as part of educational material in environmental science curricula.
+
+I strongly reconmmend the Extension of this  study to include temperature anomaly data for correlation analysis.
 
