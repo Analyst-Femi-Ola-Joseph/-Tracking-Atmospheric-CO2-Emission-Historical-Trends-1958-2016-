@@ -61,8 +61,9 @@ import matplotlib.pyplot as plt
 climate_change_df = pd.read_csv("C:/Users/steph/OneDrive/Desktop/_DATA SCIENCE BOOTCAMP TRAINING/DATA SET/climate_change.csv")
 
 climate_change_df.head()
-
 ```
+<img width="278" alt="Data Loading" src="https://github.com/user-attachments/assets/f6dff71e-58fb-4382-bdb9-f923ad27d027" />
+
 
 ###  Data Analysis
 
