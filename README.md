@@ -173,11 +173,11 @@ plt.show()
 
 ### Recommendations
 
-I strongly reconmmend  the global adoption of renewable energy sources.
+- I strongly reconmmend  the global adoption of renewable energy sources.
 
-I strongly reconmmend the Promotion of  global CO₂ emission monitoring for real-time policy response.
+- I strongly reconmmend the Promotion of  global CO₂ emission monitoring for real-time policy response.
 
-I strongly reconmmend that this  findings should be used as part of educational material in environmental science curricula.
+- I strongly reconmmend that this  findings should be used as part of educational material in environmental science curricula.
 
-I strongly reconmmend the Extension of this  study to include temperature anomaly data for correlation analysis.
+- I strongly reconmmend the Extension of this  study to include temperature anomaly data for correlation analysis.
 
