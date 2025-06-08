@@ -2,7 +2,7 @@
  
 Tracking Atmospheric CO₂: A Historical Analysis of CO2 Emission Trends (1958–2016)
 
-## Project Overview
+## Project Overview 
 
 This data science research project investigates the long-term trends in atmospheric carbon dioxide (CO₂) concentrations from 1958 to 2016.
 
