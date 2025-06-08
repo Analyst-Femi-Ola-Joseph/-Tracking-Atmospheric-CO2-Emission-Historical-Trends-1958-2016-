@@ -1,4 +1,4 @@
-# -Tracking-Atmospheric-CO2-Emission-Historical-Trends-1958-2016-
+<img width="239" alt="missing values" src="https://github.com/user-attachments/assets/c4286f2d-ce64-4a8b-8d36-d2b318f165d5" /># -Tracking-Atmospheric-CO2-Emission-Historical-Trends-1958-2016-
 This data science research project investigates the long-term trends in atmospheric carbon dioxide (CO₂) concentrations from 1958 to 2016.
 
 
@@ -81,6 +81,9 @@ climate_change_df.head()
 
 ```
 
+<img width="221" alt="Conversion to time - seires" src="https://github.com/user-attachments/assets/3d1620a8-7be1-43ea-b3c6-d261e3704b85" />
+
+
 ###  Data Inspection(check for missing values)
 
 ``` python
@@ -92,6 +95,8 @@ climate_change_df.isna().any()
 
 ```
 
+<img width="239" alt="missing values" src="https://github.com/user-attachments/assets/6fd4988b-6103-4787-9d86-3bb3b846a2f2" />
+
 ``` python
 
 # Counting the number of missing values.
@@ -99,6 +104,8 @@ climate_change_df.isna().any()
 climate_change_df.isna().sum()
 
 ```
+<img width="239" alt="missing values" src="https://github.com/user-attachments/assets/df5c644f-0f8f-4034-aa43-89d63746fd61" />
+
 
 ### Data Cleaning (handling missing values) 
 
@@ -106,9 +113,16 @@ climate_change_df.isna().sum()
 climate_change_df.shape
 ```
 
+<img width="157" alt="data size" src="https://github.com/user-attachments/assets/117d2f5e-6196-48d9-926e-7a0e393ab796" />
+
+
 ``` python
 climate_change_df["co2"].mean()
 ```
+
+<img width="101" alt="mean" src="https://github.com/user-attachments/assets/d6e43b00-9e84-40c9-a3af-98c80db0a77f" />
+
+
 ``` python
 # Filling the missing values with the mean value 352.32 on the co2 column.
 
@@ -117,11 +131,17 @@ climate_change_df = climate_change_df.fillna(352.32)
 climate_change_df.head()
 
 ```
+
+<img width="239" alt="missing values" src="https://github.com/user-attachments/assets/8ed8e9a4-e651-457d-aaa7-6802ebb6f595" />
+
+
 ``` python
 # To confirm that there are no more missing values , use the function below.
 
 climate_change_df.isna().any()
 ```
+
+<img width="161" alt="Confirm missing values replaced with mean" src="https://github.com/user-attachments/assets/6bf0415e-aec7-440b-891c-2cfcbf8169fa" />
 
 ### Data Visualization
 
@@ -151,6 +171,8 @@ fig.suptitle("Tracking Atmospheric CO2 Emission Historical Trends (1958–2016)"
 plt.show()
 
 ```
+
+<img width="511" alt="Data Visualization" src="https://github.com/user-attachments/assets/16399161-4126-46cb-a884-58e9961f6734" />
 
 ###  Data Interpretation
 
