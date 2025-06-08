@@ -1,8 +1,9 @@
-<img width="239" alt="missing values" src="https://github.com/user-attachments/assets/c4286f2d-ce64-4a8b-8d36-d2b318f165d5" /># -Tracking-Atmospheric-CO2-Emission-Historical-Trends-1958-2016-
-This data science research project investigates the long-term trends in atmospheric carbon dioxide (CO₂) concentrations from 1958 to 2016.
-
+# Project Title
+ 
+Tracking Atmospheric CO₂: A Historical Analysis of CO2 Emission Trends (1958–2016)
 
 ## Project Overview
+
 This data science research project investigates the long-term trends in atmospheric carbon dioxide (CO₂) concentrations from 1958 to 2016.
 
 Utilizing high-resolution time-series data from the Mauna Loa Observatory and other verified sources, the project explores the seasonal and annual patterns of CO₂ emissions over nearly six decades.
